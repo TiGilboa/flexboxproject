@@ -1,0 +1,36 @@
+html {
+  background-color: #ffffff;
+}
+.main {
+  grid-area: main;
+  background-color: blue;
+}
+.nav {
+  grid-area: nav;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.nav > div {
+padding-right: 5px;
+padding-left: 5px;
+
+}
+
+.footer {
+  grid-area: footer;
+  background-color: green;
+}
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-color: #ffff;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  grid-template-areas: "nav nav nav nav" "main main main main" "footer footer footer footer"
+}
